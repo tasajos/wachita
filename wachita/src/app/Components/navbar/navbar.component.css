@@ -1,0 +1,18 @@
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .dropdown-item {
+    color: #333;
+    font-size: 16px;
+    padding: .5rem 1rem;
+    transition: .3s ease-in-out;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
