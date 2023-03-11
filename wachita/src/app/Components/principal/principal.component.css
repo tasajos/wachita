@@ -17,5 +17,15 @@
 
 .container{
     margin: 0 20%;
+    display: flex;
     
     }
+
+.card-title{
+        text-align: center;
+    }
+
+.card{
+    margin-top: 5%;
+    margin-right: 60px;
+}
