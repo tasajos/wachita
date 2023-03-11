@@ -15,6 +15,9 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SeguimientonComponent } from './Components/seguimienton/seguimienton.component';
 import { SeguimientovComponent } from './Components/seguimientov/seguimientov.component';
 
+//modulos
+import { RouterModule } from '@angular/router'; // importar el módulo de rutas
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { SeguimientovComponent } from './Components/seguimientov/seguimientov.co
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
