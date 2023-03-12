@@ -67,7 +67,7 @@ this.obtenerWachita();
     
   }
   mensajeExito(){
-    this._snackBar.open(" eliminado",'',{
+    this._snackBar.open(" Registro Eliminado",'',{
       duration:3000
   }
 )};  
