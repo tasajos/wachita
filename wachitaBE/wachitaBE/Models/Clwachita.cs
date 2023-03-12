@@ -16,7 +16,7 @@
         public string observacion { get; set; }
         public string color { get; set; }
 
-        public int peso { get; set; }
+        public float peso { get; set; }
 
         public string origen { get; set; }
         public DateTime FechaCreacion { get; set; }
