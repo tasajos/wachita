@@ -25,6 +25,9 @@ addwachita (wachita: InWachita): Observable<InWachita> {
 
 
 }
+deleteWachita(id:number): Observable<void>{
+  return this.http.delete<void>(`${this.Myappurl}${this.Myapiurl}${id}`);
+ }
 
   
 }
