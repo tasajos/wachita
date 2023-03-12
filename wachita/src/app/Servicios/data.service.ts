@@ -7,12 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private apiUrl: string = 'https://localhost:7054/'; // aquí iría la URL de la API
+    private apiUrl: string = 'https://localhost:7054/api/Wachita/'; // reemplaza la URL con la URL de tu propio servidor
+
 
   constructor(private http: HttpClient) { }
 
-  getCount(): Observable<number> { // definimos el tipo de retorno del método
-    return this.http.get<number>(`${this.apiUrl}/count`);
+ 
+  getCount(): Observable<number> {
+    return this.http.get<number>(this.apiUrl + 'count');
   }
-
 }
