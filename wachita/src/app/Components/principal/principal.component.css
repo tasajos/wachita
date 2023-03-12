@@ -1,4 +1,4 @@
-.basic{
+.basic {
 
     position: absolute;
     top: 0;
@@ -15,10 +15,9 @@
 
 }
 
-.container{
+.container {
     margin: 0 20%;
     display: flex;
-    
     }
 
 .card-title{
@@ -45,3 +44,7 @@
     .card-title2{
         text-align: center;
     }
+    body {
+        margin-bottom: 100px;
+      }
+      
