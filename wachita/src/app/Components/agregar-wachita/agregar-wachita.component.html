@@ -58,7 +58,13 @@
                 </mat-form-field></mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Observacion</mat-label>
-                    <input formControlName="observacion" autocomplete="off" matInput placeholder="Observacion">
+                    <mat-select input formControlName="observacion" autocomplete="off" matInput placeholder="Observacion">
+                        <mat-option value="Buey">Bueyes</mat-option>
+                        <mat-option value="Maternidad">Maternidad</mat-option>
+                        <mat-option value="Transferencia">Transferencia</mat-option>
+                        <mat-option value="Fallecido">Fallecido</mat-option>
+                      </mat-select>
+                    
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
