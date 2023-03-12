@@ -34,4 +34,7 @@ deleteWachita(id:number): Observable<void>{
   return this.http.get<InWachita>(`${this.Myappurl}${this.Myapiurl}${id}`)
 
 }
+getCount(): Observable<number> {
+  return this.http.get<number>('/api/Wachita');
+}
 }
