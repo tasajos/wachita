@@ -28,7 +28,7 @@ export class VerWachitaComponent  implements OnInit{
     }
   obtenerWachita(){
   //this._verwachita.getwachita(this.id).subscribe(data => this.idWachita =data);
-  this._verwachita.getwachita(this.id).subscribe(data =>this.idWachita =data);
+  this._verwachita.getidwachita(this.id).subscribe(data =>this.idWachita =data);
   }
   
   }

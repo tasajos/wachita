@@ -29,5 +29,9 @@ deleteWachita(id:number): Observable<void>{
   return this.http.delete<void>(`${this.Myappurl}${this.Myapiurl}${id}`);
  }
 
-  
+ getidwachita(id:number): Observable<InWachita>{
+
+  return this.http.get<InWachita>(`${this.Myappurl}${this.Myapiurl}${id}`)
+
+}
 }
