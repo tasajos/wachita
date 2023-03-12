@@ -1,4 +1,4 @@
-.basic{
+.basic {
 
     position: absolute;
     top: 0;
@@ -15,10 +15,9 @@
 
 }
 
-.container{
+.container {
     margin: 0 20%;
     display: flex;
-    
     }
 
 .card-title{
@@ -29,3 +28,23 @@
     margin-top: 5%;
     margin-right: 60px;
 }
+
+.card2{
+    margin: 3% 35%;
+    justify-content: center;
+    align-items: center;
+    }
+
+    
+.card3 {
+    
+    max-width: 700px;
+    }
+
+    .card-title2{
+        text-align: center;
+    }
+    body {
+        margin-bottom: 100px;
+      }
+      
