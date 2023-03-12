@@ -34,6 +34,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
+import { MboardComponent } from './Components/mboard/mboard.component';
 
 
 
@@ -47,7 +48,8 @@ import { MatSelectModule } from '@angular/material/select';
     PrincipalComponent,
     NavbarComponent,
     SeguimientonComponent,
-    SeguimientovComponent
+    SeguimientovComponent,
+    MboardComponent
   ],
   imports: [
     BrowserModule,
