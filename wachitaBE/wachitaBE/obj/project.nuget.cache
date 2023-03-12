@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fFkUM1WvvjPLmFF/lBYMGPDUC5y+KkzZg2eaf5MOrih6R0GX9uh2TGjTIstE7wcFG7LNezfygk1ck9kopwRoBw==",
+  "success": true,
+  "projectFilePath": "C:\\Chakuysoft\\Wachita\\wachita\\Bwachita\\wachitaBE\\wachitaBE\\wachitaBE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tasajos\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\tasajos\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\tasajos\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\tasajos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\tasajos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\tasajos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
