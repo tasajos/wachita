@@ -1,1 +1,26 @@
-<p>ver-wachita works!</p>
+<div class="title">
+    <H1>VER USUARIO</H1> 
+</div>
+
+<div *ngIf="idWachita" class="container">
+    
+    <mat-card class="card">
+        
+        <mat-card-title>{{idWachita.nombre}}</mat-card-title>
+        <p></p>
+        <p></p>
+                   <mat-card-content>
+                <p><strong>Nombre:</strong>{{idWachita.nombre}} </p>
+                <p><strong>Raza:</strong> {{idWachita.raza}} </p>
+                <p><strong>Edad Año:</strong> {{idWachita.edada}} </p>
+                <p><strong>Dueño:</strong> {{idWachita.dueno}} </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-flat-button color="primary" routerLink="/principal">Volver</button>
+            </mat-card-actions>
+            
+            </mat-card>
+
+</div>
+    
+
