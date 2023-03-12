@@ -77,5 +77,43 @@ namespace wachitaBE.Controllers
 
         }
 
+        [HttpGet("{id}")]
+
+        public async Task<IActionResult> Get(int Id)
+        {
+            try
+            {
+                var getdelete = await _context.Wachitaregistro.FindAsync(Id);
+                return Ok(getdelete);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int Id)
+        {
+            try
+            {
+                var delete = await _context.Wachitaregistro.FindAsync(Id);
+
+                if (delete == null)
+                {
+                    return NotFound();
+                }
+
+                _context.Wachitaregistro.Remove(delete);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }
