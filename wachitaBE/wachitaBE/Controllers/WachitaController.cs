@@ -114,6 +114,12 @@ namespace wachitaBE.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet("count")]
+        public async Task<IActionResult> GetCount()
+        {
+            var count = await _context.Wachitaregistro.CountAsync();
+            return Ok(count);
+        }
 
     }
 }
