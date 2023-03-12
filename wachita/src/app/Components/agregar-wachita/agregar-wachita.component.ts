@@ -12,6 +12,13 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   templateUrl: './agregar-wachita.component.html',
   styleUrls: ['./agregar-wachita.component.css']
 })
-export class AgregarWachitaComponent  {
+export class AgregarWachitaComponent  implements OnInit{
+
+
+constructor(){}
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 }

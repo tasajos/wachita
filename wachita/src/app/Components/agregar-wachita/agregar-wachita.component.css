@@ -16,7 +16,6 @@
 }
 .container{
     margin: 0 20%;
-    display: flex;
     margin-top: 4%;
     
     }
@@ -37,4 +36,10 @@
       .dropdown-item:hover {
         background-color: #f8f9fa;
       }
-      
+
+      .card {
+        margin-top: 10px;
+      }
+      .mat-grid-tile {
+        background: lightblue;
+      }

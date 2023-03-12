@@ -2,13 +2,14 @@ export interface InWachita {
     // columna db 
 id?: number,
 nombre: string,
-apellido: string,
-telefono:number,
+raza: string,
+padres:string,
 ubicacion: string,
-tipo: string,
-detalle:string,
-pedido:string,
-cantidad: number,
+edada: number,
+edadm: number,
+dueno:string,
+marca:string,
+observacion: string,
 color: string,
-precio:number,
+
 }
