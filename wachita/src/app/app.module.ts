@@ -35,6 +35,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MboardComponent } from './Components/mboard/mboard.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 
 
@@ -49,7 +50,8 @@ import { MboardComponent } from './Components/mboard/mboard.component';
     NavbarComponent,
     SeguimientonComponent,
     SeguimientovComponent,
-    MboardComponent
+    MboardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
