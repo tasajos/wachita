@@ -17,7 +17,11 @@ export class AgregarWachitaComponent  implements OnInit{
 
 form: FormGroup
 
-constructor(private fb: FormBuilder){
+constructor(private fb: FormBuilder,
+  private _snackBar: MatSnackBar,
+  private _wachitaservice:SerWachitaService,
+  private aRoute: ActivatedRoute,
+  private router: Router,){
 
   this.form = this.fb.group({
 
@@ -65,5 +69,22 @@ constructor(private fb: FormBuilder){
     }
 console.log(awachita)
 
+//enviamos a backend
+
+this._wachitaservice.addwachita(awachita).subscribe(data =>{
+  console.log(data)
+  this.mensajeExito('registrada');
+      this.router.navigate(['/principal']);
+
+
+ 
+})
+
+
   }
-}
+  mensajeExito(texto: string) {
+    this._snackBar.open(`El Registro fue realizado ${texto} con exito`,'', {
+      duration: 2000,
+      horizontalPosition: 'right',
+    });
+}}

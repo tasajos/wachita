@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { InWachita } from '../Interfaz/in-wachita';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,13 @@ export class SerWachitaService {
 return this.http.get(`${this.Myappurl}${this.Myapiurl}`);
 
     }
+addwachita (wachita: InWachita): Observable<InWachita> {
+
+  return  this.http.post<InWachita>(`${this.Myappurl}${this.Myapiurl}`,wachita);
+
+
+
+}
+
   
 }
