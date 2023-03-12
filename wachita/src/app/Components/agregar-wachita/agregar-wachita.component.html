@@ -12,71 +12,71 @@
         <mat-card-subtitle mb-3> Datos de la vaca</mat-card-subtitle>
         <br>
         <br>
-        <form>
+        <form [formGroup]="form" (ngSubmit)="agregarwachita()">
 
 
             <mat-grid-list cols="3" rowHeight="80px">
                 <mat-grid-tile [colspan]="2">
                     <mat-form-field appearance="fill" class="mat-form-field">
                         <mat-label>Nombre</mat-label>
-                        <input autocomplete="off" matInput placeholder="Nombre">
+                        <input formControlName="nombre" autocomplete="off" matInput placeholder="Nombre">
                     </mat-form-field>
                 </mat-grid-tile>
 
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                         <mat-label>Raza</mat-label>
-                        <input autocomplete="off" matInput placeholder="Raza">
+                        <input formControlName="raza" autocomplete="off" matInput placeholder="Raza">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="2"> <mat-form-field appearance="fill" class="mat-form-field">
                         <mat-label>Padres</mat-label>
-                        <input autocomplete="off" matInput placeholder="Padres">
+                        <input formControlName="padres" autocomplete="off" matInput placeholder="Padres">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                         <mat-label>Ubicacion</mat-label>
-                        <input autocomplete="off" matInput placeholder="Ubicacion">
+                        <input formControlName="ubicacion" autocomplete="off" matInput placeholder="Ubicacion">
                     </mat-form-field></mat-grid-tile>
                 <mat-grid-tile [colspan]="2"> <mat-form-field appearance="fill" class="mat-form-field">
                         <mat-label>Dueño</mat-label>
-                        <input autocomplete="off" matInput placeholder="dueno">
+                        <input formControlName="dueno" autocomplete="off" matInput placeholder="dueno">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Edad Años</mat-label>
-                    <input autocomplete="off" matInput placeholder="Edad Años">
+                    <input type="number" formControlName="edada" autocomplete="off" matInput placeholder="Edad Años">
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Edad Meses</mat-label>
-                    <input autocomplete="off" matInput placeholder="Edad meses">
+                    <input  type="number" formControlName="edadm" autocomplete="off" matInput placeholder="Edad meses">
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Marca</mat-label>
-                    <input autocomplete="off" matInput placeholder="Marca">
+                    <input formControlName="marca" autocomplete="off" matInput placeholder="Marca">
                 </mat-form-field></mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Observacion</mat-label>
-                    <input autocomplete="off" matInput placeholder="Observacion">
+                    <input formControlName="observacion" autocomplete="off" matInput placeholder="Observacion">
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Color</mat-label>
-                    <input autocomplete="off" matInput placeholder="Color">
+                    <input formControlName="color" autocomplete="off" matInput placeholder="Color">
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Peso</mat-label>
-                    <input autocomplete="off" matInput placeholder="Peso">
+                    <input type="number" formControlName="peso" autocomplete="off" matInput placeholder="Peso">
                 </mat-form-field>
             </mat-grid-tile>
                 <mat-grid-tile> <mat-form-field appearance="fill" class="mat-form-field">
                     <mat-label>Origen</mat-label>
-                    <input autocomplete="off" matInput placeholder="Origen">
+                    <input formControlName="origen" autocomplete="off" matInput placeholder="Origen">
                 </mat-form-field></mat-grid-tile>
                 <mat-grid-tile [colspan]="3">
-                    <button mat-raised-button color="primary" class="btnregistar">Registrar</button>
+                    <button [disabled]="form.invalid" type="submit"  mat-raised-button color="primary" class="btnregistar">Registrar</button>
                     <button mat-raised-button color="accent" routerLink="/principal">Volver</button>
 
 
