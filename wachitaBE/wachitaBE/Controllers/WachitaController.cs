@@ -120,6 +120,20 @@ namespace wachitaBE.Controllers
             var count = await _context.Wachitaregistro.CountAsync();
             return Ok(count);
         }
+        [HttpGet("counts")]
+        public IActionResult GetCounts()
+        {
+            int vacasCount = _context.Wachitaregistro.Count();
+            int maternidadCount = _context.Wachitaregistro.Count(w => w.observacion == "Maternidad");
+
+            var counts = new
+            {
+                Vacas = vacasCount,
+                Maternidad = maternidadCount
+            };
+
+            return Ok(counts);
+        }
 
     }
 }
