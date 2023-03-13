@@ -1,5 +1,10 @@
 .estilo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   
+ 
+}
+.estilo .separador {
+  margin-right: 50px;
 }
