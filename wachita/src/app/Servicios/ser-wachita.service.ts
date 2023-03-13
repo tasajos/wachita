@@ -35,13 +35,12 @@ deleteWachita(id:number): Observable<void>{
 
 }
 getCount(): Observable<number> {
-  return this.http.get<number>('/api/Wachita/Count');
+  return this.http.get<number>(`${this.Myappurl}${this.Myapiurl}Count`);
 
 }
-getCountm(observacion: string): Observable<number> {
-  const url = `${this.Myappurl}${this.Myapiurl}Count?observacion=${observacion}`;
-  //return this.http.get<number>('/api/Wachita/Count');
-  return this.http.get<number>(url);
+getCountm(observacion: string): Observable<{vacas: number, maternidad: number}> {
+  const url = `${this.Myappurl}${this.Myapiurl}Counts?observacion=${observacion}`;
+  return this.http.get<{vacas: number, maternidad: number}>(url);
 }
 
 }
