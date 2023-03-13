@@ -10,6 +10,7 @@ import { DataService } from '../../Servicios/data.service';
 })
 export class DashboardComponent implements OnInit {
   count: number = 0;
+  countb: number = 0;
 
   constructor(private dataService: DataService) { }
 
