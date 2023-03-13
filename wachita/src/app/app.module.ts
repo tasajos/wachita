@@ -36,6 +36,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MboardComponent } from './Components/mboard/mboard.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { MaternidadComponent } from './Components/maternidad/maternidad.component';
 
 
 
@@ -53,7 +54,8 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     SeguimientonComponent,
     SeguimientovComponent,
     MboardComponent,
-    DashboardComponent
+    DashboardComponent,
+    MaternidadComponent
   ],
   imports: [
     BrowserModule,
