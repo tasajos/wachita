@@ -54,7 +54,15 @@ export class MaternidadComponent implements OnInit,AfterViewInit{
   }
 
   ngOnInit(): void {
-    this.obtenerWachita();
+   // this.obtenerWachita();
+   this._wachitaservice.getwachita().subscribe((data: any) => {
+    // Filtrar los registros que corresponden a maternidad
+    const filteredData = data.filter((item: any) => item.observacion === 'Maternidad');
+
+    this.dataSource = new MatTableDataSource(filteredData);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  });
   
   }
   eliminarPersonal(id:number){
