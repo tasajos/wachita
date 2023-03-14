@@ -1,40 +1,69 @@
 .basic{
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    justify-content: center;
-    text-align: center !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center !important;
 
 }
-.container{
-    margin: 0 20%;
-    display: flex;
-    margin-top: 4%;
-    
+table {
+  width: 100%;
+}
+
+  .card{
+      margin-top: 20px;
+      background-color:white;
+     color:cadetblue;
+     margin: 10 20%;
+      
+  }
+ 
+  .sub{
+      color: black;
+  }
+  .btn{
+      margin: 5% 0;
+      margin-right: 10px;
+  }
+  
+
+ .fondo{
+      background-color:white;
     }
-    .dropdown-menu {
-        background-color: #fff;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
+    .fde{
+      width: 100%;
+    }
+    .mat-mdc-form-field {
+      font-size: 14px;
+      width: 100%;
+    }
+    .delete {
+    cursor:pointer;
+    color:red;
+    }
+   .search {
+      cursor:pointer;
+      color:blue;
       }
-      
-      .dropdown-item {
-        color: #333;
-        font-size: 16px;
-        padding: .5rem 1rem;
-        transition: .3s ease-in-out;
-      }
-      
-      .dropdown-item:hover {
-        background-color: #f8f9fa;
-      }
-      
+  .edit {
+        cursor:pointer;
+        color:cadetblue;
+        }
+  .btnaceptar {
+    font-size: 10px;
+    line-height: 28px;
+
+    }
+    .btn2{
+      margin: 5% 0;
+      align-items: center;
+  }
+  
