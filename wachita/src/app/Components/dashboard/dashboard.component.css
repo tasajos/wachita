@@ -8,3 +8,12 @@
 .estilo .separador {
   margin-right: 50px;
 }
+
+.image {
+  width:5%;
+   height:auto;
+   margin-right: 40px;
+}
+.vacas, .maternidad {
+  font-size: 17px;
+}
