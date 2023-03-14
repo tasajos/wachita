@@ -9,9 +9,10 @@ import { SerWachitaService } from '../../Servicios/ser-wachita.service';
 })
 export class DashboardComponent implements OnInit {
   vacasCount: number = 0;
+  nacidoCount: number = 0;
  // maternidadCount: number=0;
   //maternidadCount: number 
-  maternidadCount: {vacas: number, maternidad: number} = {vacas: 0, maternidad: 0};
+  maternidadCount: {vacas: number, maternidad: number, nacido:number} = {vacas: 0, maternidad: 0,nacido:0};
   
 
   constructor(private serWachitaService: SerWachitaService) { }
@@ -25,5 +26,10 @@ export class DashboardComponent implements OnInit {
   console.log(data); 
       this.maternidadCount = data;
     });
+
+    this.serWachitaService.getCountm("Nacido").subscribe(data=>{
+      console.log(data); 
+          this.nacidoCount = data.nacido;
+        });
   }
 }

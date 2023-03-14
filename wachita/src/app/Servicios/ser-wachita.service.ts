@@ -38,9 +38,9 @@ getCount(): Observable<number> {
   return this.http.get<number>(`${this.Myappurl}${this.Myapiurl}Count`);
 
 }
-getCountm(observacion: string): Observable<{vacas: number, maternidad: number}> {
+getCountm(observacion: string): Observable<{vacas: number, maternidad: number, nacido:number}> {
   const url = `${this.Myappurl}${this.Myapiurl}Counts?observacion=${observacion}`;
-  return this.http.get<{vacas: number, maternidad: number}>(url);
+  return this.http.get<{vacas: number, maternidad: number, nacido:number}>(url);
 }
 
 }
