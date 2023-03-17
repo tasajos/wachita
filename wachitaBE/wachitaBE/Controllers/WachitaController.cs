@@ -125,11 +125,13 @@ namespace wachitaBE.Controllers
         {
             int vacasCount = _context.Wachitaregistro.Count();
             int maternidadCount = _context.Wachitaregistro.Count(w => w.observacion == "Maternidad");
+            int nacidosCount = _context.Wachitaregistro.Count(w => w.observacion == "Nacido");
 
             var counts = new
             {
                 Vacas = vacasCount,
-                Maternidad = maternidadCount
+                Maternidad = maternidadCount,
+                Nacido = nacidosCount
             };
 
             return Ok(counts);
