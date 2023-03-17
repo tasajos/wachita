@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AgregarWachitaComponent } from './Components/agregar-wachita/agregar-wachita.component';
+import { FacturacionComponent } from './Components/facturacion/facturacion.component';
 import { ListadoWachitaComponent } from './Components/listado-wachita/listado-wachita.component';
 import { MaternidadComponent } from './Components/maternidad/maternidad.component';
 import { PrincipalComponent } from './Components/principal/principal.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'seguimienton', component:SeguimientonComponent},
   {path: 'seguimientov', component:SeguimientovComponent},
   {path: 'maternidad', component:MaternidadComponent},
+  {path: 'facturacion', component:FacturacionComponent},
   //{path: '**', redirectTo: 'principal', pathMatch:'full'},
   {path: '**', redirectTo: 'principal', pathMatch:'full'},
   ];
