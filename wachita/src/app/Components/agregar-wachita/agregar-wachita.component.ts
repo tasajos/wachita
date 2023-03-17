@@ -69,7 +69,7 @@ constructor(private fb: FormBuilder,
     }
 console.log(awachita)
 
-//enviamos a backend
+//enviamos a backendss
 
 this._wachitaservice.addwachita(awachita).subscribe(data =>{
   console.log(data)
