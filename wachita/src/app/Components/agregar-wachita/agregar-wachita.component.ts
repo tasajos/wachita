@@ -82,6 +82,9 @@ this._wachitaservice.addwachita(awachita).subscribe(data =>{
 
 
   }
+
+
+
   mensajeExito(texto: string) {
     this._snackBar.open(`El Registro fue realizado ${texto} con exito...`,'', {
       duration: 2000,

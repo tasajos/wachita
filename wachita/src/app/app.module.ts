@@ -37,6 +37,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MboardComponent } from './Components/mboard/mboard.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { MaternidadComponent } from './Components/maternidad/maternidad.component';
+import { EditarwComponent } from './Components/editarw/editarw.component';
 
 
 
@@ -55,7 +56,8 @@ import { MaternidadComponent } from './Components/maternidad/maternidad.componen
     SeguimientovComponent,
     MboardComponent,
     DashboardComponent,
-    MaternidadComponent
+    MaternidadComponent,
+    EditarwComponent
   ],
   imports: [
     BrowserModule,
