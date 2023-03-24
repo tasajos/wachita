@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class PrincipalComponent {
 
+  imagenUrl = '../../../assets/img/vaca.ico';
 }
