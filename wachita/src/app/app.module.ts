@@ -39,6 +39,8 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { MaternidadComponent } from './Components/maternidad/maternidad.component';
 import { EditarwComponent } from './Components/editarw/editarw.component';
 import { FacturacionComponent } from './Components/facturacion/facturacion.component';
+import { NgxFileDropModule } from 'ngx-file-drop';
+
 
 
 
@@ -84,7 +86,8 @@ import { FacturacionComponent } from './Components/facturacion/facturacion.compo
     ReactiveFormsModule,
     MatSnackBarModule,
     MatProgressBarModule,
-    MatSelectModule    
+    MatSelectModule,
+    NgxFileDropModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

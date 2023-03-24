@@ -5,6 +5,7 @@ import { SerWachitaService } from 'src/app/Servicios/ser-wachita.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { InWachita } from 'src/app/Interfaz/in-wachita';
+import { NgxFileDropModule } from 'ngx-file-drop';
 
 
 
